@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>Exercice 1</title>
+</head>
+<body>
+			<label>
+				<span class="gras">Nombre de clics : </span>
+				
+				<input readonly="readonly" id="nombreClic" type="text" class="champ" name="nombre_part" value="0" size="1" />
+				<button id="ajouter" type="button" name="ajouter">Cliqme quoi</button>								
+			</label>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+
+$(function() {
+	$("#ajouter").click(function() {
+		var valeur = $('#nombreClic').val();
+		var nouvelleValeur = parseFloat(valeur) + 1;
+		$('#nombreClic').val(nouvelleValeur);
+	});
+});
+
+</script>
+
+
+
+
+</body>
+</html>
